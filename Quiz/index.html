@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>quiz!</title>
+  </head>
+  <body onload="start()">
+
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Infinity War Quiz</h1>
+      </div>
+      <form class="bg-light" action="#">
+        <h1 id="questionTitle" class="display-15">Title</h1>
+        <div class="form-group custom-control custom-checkbox">
+          <input id="check1" class="custom-control-input form-check-input" type="radio" name="a">
+          <label id="label1" class="form-check-label custom-control-label" for="check1">Answer 1</label>
+        </div>
+        <div class="form-group custom-control custom-checkbox">
+          <input id="check2" class="custom-control-input form-check-input" type="radio" name="a">
+          <label id="label2" class="form-check-label custom-control-label" for="check2">Answer 2</label>
+        </div>
+        <div class="form-group custom-control custom-checkbox">
+          <input id="check3" class="custom-control-input form-check-input" type="radio" name="a">
+          <label id="label3" class="form-check-label custom-control-label" for="check3">Answer 3</label>
+        </div>
+        <div class="form-group custom-control custom-checkbox">
+          <input id="check4" class="custom-control-input form-check-input" type="radio" name="a">
+          <label id="label4" class="form-check-label custom-control-label" for="check4">Answer 4</label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="checkAnswer()">Submit</button>
+      </form>
+      <div>
+        <h2 class="display-15">Score: <span id="score">0</span></h1>
+      </div>
+    </div>
+
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="js/js.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
