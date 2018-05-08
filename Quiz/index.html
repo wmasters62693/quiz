@@ -15,9 +15,9 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h1 class="display-4">Infinity War Quiz</h1>
+        <h1 class="display-4">Quiz</h1>
       </div>
-      <form class="bg-light" action="#">
+      <form class="bg-light p-16">
         <h1 id="questionTitle" class="display-15">Title</h1>
         <div class="form-group custom-control custom-checkbox">
           <input id="check1" class="custom-control-input form-check-input" type="radio" name="a">
@@ -35,21 +35,49 @@
           <input id="check4" class="custom-control-input form-check-input" type="radio" name="a">
           <label id="label4" class="form-check-label custom-control-label" for="check4">Answer 4</label>
         </div>
-        <button type="submit" class="btn btn-primary" onclick="checkAnswer()">Submit</button>
+        <button type="button" class="btn btn-primary" onclick="checkAnswer()">Submit</button>
       </form>
-      <div>
-        <h2 class="display-15">Score: <span id="score">0</span></h1>
+      <div id="gameData" class="container p-0">
+         <div class="row">
+            <div class="col">
+               <h2 class="display-15">Score: <span id="score">0</span></h1>
+            </div>
+            <div class="col">
+               <h2 class="display-15 float-right">Strikes: <span id="strikes">0/3</span></h1>
+            </div>
+         </div>
+
+      </div>
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">test</button> -->
+    </div>
+
+
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="Modal-title"></h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <p id="Modal-content"></p>
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-danger" onclick=window.location.reload()>Button</button>
+            </div>
+         </div>
       </div>
     </div>
 
 
 
-
-    <!-- Custom JavaScript -->
-    <script src="js/js.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/js.js"></script>
   </body>
 </html>
